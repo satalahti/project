@@ -1,0 +1,111 @@
+/*DOCTYPE css */
+/* link in html <link rel="stylesheet" type="text/css" href="static/css/mystyle.css">*/
+/* https://www.tokkoro.com/picsup/3061628-aberdeen_scotland_united-kingdom.jpg */
+/* style of header text */
+h1{
+  color: #FFC0CB;
+  opacity: 0.7;
+  text-align: center;
+  font-family: serif;
+  font-style: normal;
+  font-size: 60px;
+  height: 70px;
+  margin-top: 60px;
+}
+/* style of sub-header text */
+h2{
+  color: #FFC0CB;
+  text-align: center;
+  opacity: 0.7;
+}
+/* style of url links */
+a{
+  color: #FFC0CB;
+  text-decoration: none;
+}
+/* style of url links when hovering over with pointer */
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* style of navigation bar */
+.navbar{
+  overflow: hidden;
+  background-color: #FFC0CB;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.7;
+}
+/* style of text in navigation bar */
+.navbar a{
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  font-style: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* style of navigation bar when hovering over */
+.navbar a:hover{
+  background: #FFFFFF;
+  color: #FFC0CB;
+}
+/* style of the mailto link at bottom of page */
+#email{
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+}
+/* style of find link on main page */
+#find{
+  overflow: hidden;
+  background-color: #FFC0CB;
+  opacity: 0.8;
+  position: fixed;
+  margin-top: 120px;
+  margin-left: 290px;
+  padding: 16px 1px;
+}
+/* style of text in find link on main page */
+#find a{
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+  text-decoration: none;
+}
+/* style of find link on main page when hovering over */
+#find a:hover{
+  background: #FFFFFF;
+  color: #FFC0CB;
+  border: 5px solid #FFC0CB;
+}
+/* style of submit link on main page */
+#submit{
+  overflow: hidden;
+  background-color: #FFC0CB;
+  opacity: 0.8;
+  position: fixed;
+  margin-top: 120px;
+  margin-left: 700px;
+  padding: none;
+}
+/* style of submit in find link on main page */
+#submit a{
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+  text-decoration: none;
+}
+/* style of submit link on main page when hovering over */
+#submit a:hover{
+  background: #FFFFFF;
+  color: #FFC0CB;
+  border: 5px solid #FFC0CB;
+}

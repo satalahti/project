@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShelterDeen | Cheers</title>
+    <style>
+    body{
+      background-image: url(https://drive.google.com/uc?export=view&id=1E0lX9ra1qC71t3Czx03px4NEqV5p5KwA);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: cover;
+    }
+     h1   {
+       color: white;
+       font-family: "Times New Roman", Times, serif;
+       font-style: italic;
+       font-size: 60px;
+       text-align: center;
+     }
+     p    {
+       color: #696969;
+       text-align: center;
+       margin-top: 150px;
+     }
+
+    .navbar{
+      overflow: hidden;
+      background-color: #FFC0CB;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      opacity: 0.7;
+    }
+    .navbar a{
+      float: left;
+      display: block;
+      color: #000000;
+      font-style: bold;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .navbar a:hover{
+      background: #FFFFFF;
+      color: #FFC0CB;
+    }
+    .ml2 {
+      font-weight: 900;
+      font-size: 3.5em;
+    }
+    .ml2 .letter {
+      display: inline-block;
+      line-height: 1em;
+    }
+
+    a{
+      color: #FFC0CB;
+      text-decoration: none;
+    }
+    /* style of url links when hovering over with pointer */
+    a:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    #email{
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      font-size: 15px;
+    }
+
+    </style>
+  </head>
+
+    <div class="navbar">
+      <a href="./">Home</a>
+      <a href="./about">About</a>
+      <a href="mailto:info@shelterdeen.com">Contact us</a>
+    </div>
+
+  <body>
+    <div class="thankyou"><br>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script><br>
+      <p>We appreciate your contribution. Click "home" in the upper left corner to go back to the main page.</p>
+      <h1 class="ml2">Thank you!</h1>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    </div>
+
+    <script>
+      var textWrapper = document.querySelector('.ml2');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml2 .letter',
+          scale: [4,1],
+          opacity: [0,1],
+          translateZ: 0,
+          easing: "easeOutExpo",
+          duration: 950,
+          delay: (el, i) => 70*i
+        }).add({
+          targets: '.ml2',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+      </script>
+      <p id=email><a href="mailto:info@shelterdeen.com" target="_blank">info@shelterdeen.com</a></p>
+  </body>
+</html>

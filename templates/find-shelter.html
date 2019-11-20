@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/css/mystyle.css">
+    <title>ShelterDeen | Find Shelter</title>
+    <style> /* page specifics */
+    body{
+      background-image: url(https://drive.google.com/uc?export=view&id=1zAYcgPHlVDlqNTZqXMpiNANnW4Pd1dx0);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: cover;
+    }
+    h2{
+      color: #FFC0CB;
+      text-align: center;
+      opacity: 0.7;
+    }
+    button{
+      background-color: #FFC0CB;
+      border: none;
+      color: #FFFFFF;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-family: serif;
+      display: inline-block;;
+      font-size: 32px;
+      margin-top: 80px;
+      margin-left: 485px;
+      border-radius: 4px;
+    }
+    button:hover{
+      background: #FFFFFF;
+      color: #FFC0CB;
+      border: 5px solid #FFC0CB;
+      cursor: pointer;
+    }
+    </style>
+
+  </head>
+
+  <body>
+  <!-- Navigation Bar -->
+      <div class="navbar">
+        <a href="./">Home</a>
+        <a href="./about">About</a>
+        <a href="./contact">Contact us</a>
+      </div>
+
+  <!-- HEADER -->
+    <h1> ShelterDeen </h1>
+    <h2> Click the button below to find your nearest shelter </h2>
+
+    <button onclick="getLocation()">FIND SHELTER</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var x = document.getElementById("demo");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    function showPosition(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+          if (latitude >= "57.145618") {
+            document.location.href="/find-shelter/north";
+          } else if (latitude < "57.145618"){
+            document.location.href="/find-shelter/south";
+          }
+    }
+    </script>
+
+    <!-- email-link at the bottom-left of the page -->
+    <p id=email><a href="mailto:info@shelterdeen.com" target="_blank">info@shelterdeen.com</a></p>
+
+  </body>
+</html>

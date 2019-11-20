@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShelterDeen | Contribute</title>
+    <style>
+    body{
+      background-image: url(https://drive.google.com/uc?export=view&id=1zAYcgPHlVDlqNTZqXMpiNANnW4Pd1dx0);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: cover;
+    }
+
+     h1   {
+       color: white;
+       font-family: "Times New Roman", Times, serif;
+       font-style: italic;
+       font-size: 60px;
+       text-align: center;
+     }
+
+     p    {
+       color: #696969;
+       text-align: center;
+     }
+
+     input[type=text] {
+       width: 80%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border-radius: 8px;
+     }
+
+     input[type=email] {
+       width: 80%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border-radius: 8px;
+     }
+     a{
+       color: #FFC0CB;
+       text-decoration: none;
+     }
+     /* style of url links when hovering over with pointer */
+     a:hover{
+       text-decoration: underline;
+       cursor: pointer;
+     }
+
+     #email{
+       overflow: hidden;
+       position: fixed;
+       bottom: 0;
+       font-size: 15px;
+     }
+
+    .navbar{
+      overflow: hidden;
+      background-color: #FFC0CB;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      opacity: 0.7;
+    }
+
+    .navbar a{
+      float: left;
+      display: block;
+      color: #000000;
+      font-style: bold;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover{
+      background: #FFFFFF;
+      color: #FFC0CB;
+    }
+
+    </style>
+  </head>
+    <div class="navbar">
+      <a href="./">Home</a>
+      <a href="./about">About</a>
+      <a href="mailto:info@shelterdeen.com">Contact us</a>
+    </div>
+  <body>
+    <div class="submit-shelter"><br>
+      <h1>Contribute</h1>
+      <p>If you have information about a shelter that is not listed on our website, please let us know!</p>
+      <form action="./thankyou" method="POST"><br><br>
+        Email address:<br>
+        <input type="email" id="mail" name="mail" required /> <br /><br>
+        Information about shelter:<br>
+        <input type="text" id="info" name="info">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+      <p id=email><a href="mailto:info@shelterdeen.com" target="_blank">info@shelterdeen.com</a></p>
+  </body>
+</html>
+
+
+<!--
+
+" method="post     add this after <form action="./
+
+{% if "address" == "@" %}
+{% endif %}
+
+<input type="text" name="address"><br><br>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+  for external stylesheet, in "<head>"
+
+-->
