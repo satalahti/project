@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+app = Flask("MyApp")
 
 #routes
 
@@ -41,5 +41,4 @@ def form():
 def thankyou():
     return render_template("thankyou.html")
 
-if __name__=="__main__":
-    Flask.run(debug=True)
+app.run(debug=True)
