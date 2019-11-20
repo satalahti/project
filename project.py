@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 
 app = Flask("MyApp")
 
+#routes
+
 @app.route("/")
 def main():
     return render_template("main.html")
